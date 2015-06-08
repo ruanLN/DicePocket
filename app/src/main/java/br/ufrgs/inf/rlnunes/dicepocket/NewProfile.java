@@ -4,27 +4,21 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.NumberPicker;
 
 
-public class AddDiceActivity extends ActionBarActivity {
-    NumberPicker np;
+public class NewProfile extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_dice);
-        np = (NumberPicker) findViewById(R.id.numberPickerDices);
-        np.setMinValue(1);
-        np.setMaxValue(10);
-        np.setWrapSelectorWheel(false);
+        setContentView(R.layout.activity_new_profile);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_add_dice, menu);
+        getMenuInflater().inflate(R.menu.menu_new_profile, menu);
         return true;
     }
 
