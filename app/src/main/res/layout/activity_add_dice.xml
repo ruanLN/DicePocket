@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.ufrgs.inf.rlnunes.dicepocket.AddDiceActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_gravity="center"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:textAlignment="gravity">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:contentDescription="@string/diceImageLabel"
+                android:src="@drawable/d6"
+                android:nestedScrollingEnabled="false"
+                android:longClickable="false"
+                android:layout_centerHorizontal="true"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:layout_gravity="top"
+                android:textAlignment="gravity"
+                android:adjustViewBounds="true" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tipo"
+                android:id="@+id/textView"
+                android:layout_column="0" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/spinnerDice"
+                android:layout_column="1"
+                android:spinnerMode="dialog"
+                android:entries="@array/diceTypes"
+                android:dropDownWidth="fill_parent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Quantidade"
+                android:id="@+id/TextView2"
+                android:layout_column="0"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberPickerDices"
+                android:layout_column="1"
+                android:orientation="vertical" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salver"
+                android:id="@+id/buttonSave"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:id="@+id/buttonCancel"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -4,5 +4,12 @@
     <string name="app_name">DicePocket</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_add_dice">AddDiceActivity</string>
+    <string name="diceImageLabel">dado atual</string>
+    <string-array name="diceTypes">
+        <item>D4</item>
+        <item>D6</item>
+        <item>D20</item>
+    </string-array>
 
 </resources>
